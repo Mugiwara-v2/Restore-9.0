@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html ><head>
+<title>84Ciss Host v1.0 for FW 9.00</title>
+<link rel="stylesheet prefetch" href="Style.css">
+<style>
+html, body {
+background-image: url('img.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+background-color: #24272b;
+color: white;
+text-align: center;
+margin: 0px;
+overflow: hidden;
+}
+		button {
+		  background:rgba(0,0,0,0.5);
+		  box-shadow: 0 5px 20px 0 white;
+		  border: 2px solid black;
+		  border-radius: 10px;
+		  color: white;
+		  text-decoration: none;
+		  width: 200px;
+          height: 40px;
+		  display:inline-table;
+		  font-family: system-ui;
+		  text-align: center;
+		}
+
+		button:focus,
+		button:hover {
+		  color: White;
+		  box-shadow: 0 5px 50px 0 white;
+		  background-color: #87FF33;
+          border-radius: 10px;
+		}
+h1 {
+text-shadow: 0.1em 0.1em 0.2em black;
+font-size: 25px;
+text-align: center;
+color: white;
+}
+.btn {
+background-color: #003263;
+color: white;
+width: 260px;
+height: 49px;
+padding-bottom: 5px;
+text-align: center;
+font-size: 20px;
+margin-top: 8px;
+margin-bottom: 8px;
+margin-left: 8px;
+margin-right: 8px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-width: 0px;
+border-left-width: 0px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 8px;
+}
+.btn:hover {
+background-color: #0058b1;
+}
+.btn-toolbox {
+background-color: #ae2301;
+}
+.btn-toolbox:hover {
+background-color: #d42a01;
+}
+</style>
+<script src="int64.js"></script>
+<script src="rop.js"></script>
+<script src="kexploit.js"></script>
+<script src="webkit.js"></script>
+</head>
+<body>
+<script>
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+<h1 id="msgs"style="color:#87FF33">84Ciss Restore to User Guide Host v1.0 for FW 9.00</h1>
+<h1 id=msgs2 style='font-size:25px;text-align:center;color: #87FF33;'>STATUS</h1>
+<hr>
+<br>
+<div style=font-size:20px;text-align:center;color:#87FF33;>Restore 9.0</div>
+<br><br>
+<br><br>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_dbrestore() onMouseOver="msgs2.innerHTML='Restore Host To User Guide'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Host Restore 9.0 </B></button></a>
+<br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<a style='font-size:20px;text-align:center;color:#87FF33;'>
+      Modder & Dev : <a style='font-size:20px;text-align:center;color:white;'>
+          84Ciss - Find Us In Tweeter if you have any kind of issues!&nbsp;<a href="https://twitter.com/84Ciss" style='font-size:20px;text-align:center;color:yellow;'>@84Ciss</a> </h1>
+          <br><a style='font-size:20px;text-align:center;color:#87FF33;'>
+    Special thanks : <a style=font-size:20px;text-align:center;color:white;'>
+    <a style= font-size:20px;text-align:center;color:white;>...@Sleirgoevy for Webkit, @SpecterDev & @ChendoChap for kex , @DarkModderVC & @GamerHack93 for Host, @SiSTRo for Gold&HEN&nbsp;
+
+<script>
+function allset() {
+setTimeout(function(){document.location.href = 'index.html';},3000);
+window.msgs.innerHTML="<h1>"+LoadedMSG+"</h1>";
+}
+
+function load_dbrestore(){
+var script = document.createElement('script');script.src = "restore/the-payload.js";document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Loading Jailbreak + DB Restore... Please Wait !!!"
+LoadedMSG="DB Restore Loaded... Press OK Now !!!";
+setTimeout(poc,1500);
+}
+
+</script>
+</body>
+</html>
