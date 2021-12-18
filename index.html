@@ -80,14 +80,16 @@ background-color: #d42a01;
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
-<h1 id="msgs"style="color:#87FF33">84Ciss Restore to User Guide Host v1.0 for FW 9.00</h1>
+<h1 id="msgs"style="color:#87FF33">84Ciss Restore to User Guide Host for FW 9.00</h1>
 <h1 id=msgs2 style='font-size:25px;text-align:center;color: #87FF33;'>STATUS</h1>
 <hr>
 <br>
 <div style=font-size:20px;text-align:center;color:#87FF33;>Restore 9.0</div>
 <br><br>
 <br><br>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_dbrestore() onMouseOver="msgs2.innerHTML='Restore Host To User Guide'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Host Restore 9.0 </B></button></a>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_dbrestore() onMouseOver="msgs2.innerHTML='Restore Host To User Guide'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Host 1.0 Restore 9.0 </B></button></a>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_dbrestore1() onMouseOver="msgs2.innerHTML='Restore Host To User Guide'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Host 1.1 Restore 9.0 </B></button></a>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_dbrestore2() onMouseOver="msgs2.innerHTML='Restore Host To User Guide'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Host 1.2 Restore 9.0 </B></button></a>
 <br><br>
 <br><br><br><br><br><br><br><br><br><br>
 <br><br>
@@ -99,18 +101,30 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
     <a style= font-size:20px;text-align:center;color:white;>...@Sleirgoevy for Webkit, @SpecterDev & @ChendoChap for kex , @DarkModderVC & @GamerHack93 for Host, @SiSTRo for Gold&HEN&nbsp;
 
 <script>
-function allset() {
-setTimeout(function(){document.location.href = 'index.html';},3000);
-window.msgs.innerHTML="<h1>"+LoadedMSG+"</h1>";
+function awaitpl() {
+window.msgs.innerHTML="<h1 style=color:#87FF33>"+LoadedMSG+"</h1>";
 }
 
 function load_dbrestore(){
 var script = document.createElement('script');script.src = "restore/the-payload.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Jailbreak + Restore Host 9.0... Please Wait !!!"
-LoadedMSG="DB Restore Loaded... Press OK Now !!!";
+msgs.innerHTML="Loading Jailbreak + Restore Host 1.0 Fw 9.0... Please Wait !!!"
+LoadedMSG="Restore Host 1.0 Loaded... Press OK Now !!!";
 setTimeout(poc,1500);
 }
 
+function load_dbrestore1(){
+var script = document.createElement('script');script.src = "restore2/the-payload.js";document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Loading Jailbreak + Restore Host 1.1 Fw 9.0... Please Wait !!!"
+LoadedMSG="Restore Host 1.1 Loaded... Press OK Now !!!";
+setTimeout(poc,1500);
+}
+
+function load_dbrestore2(){
+var script = document.createElement('script');script.src = "restore3/the-payload.js";document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Loading Jailbreak + Restore Host 1.2 Fw 9.0... Please Wait !!!"
+LoadedMSG="Restore Host 1.2 Loaded... Press OK Now !!!";
+setTimeout(poc,1500);
+}
 </script>
 </body>
 </html>
