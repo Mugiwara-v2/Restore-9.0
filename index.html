@@ -92,6 +92,8 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <br><br>
 <button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_dbrestore2() onMouseOver="msgs2.innerHTML='Restore Host To User Guide'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Host 1.2 Restore 9.0 </B></button></a>
 <button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_dbrestore3() onMouseOver="msgs2.innerHTML='Restore Host To User Guide'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Host 1.3 Restore 9.0 </B></button></a>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_dbrestore4() onMouseOver="msgs2.innerHTML='Restore Host To User Guide'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Host 1.4 Restore 9.0 </B></button></a>
+
 
 <br><br><br><br><br><br><br><br><br><br>
 <br><br>
@@ -132,6 +134,13 @@ function load_dbrestore3(){
 var script = document.createElement('script');script.src = "restore4/the-payload.js";document.getElementsByTagName('head')[0].appendChild(script);
 msgs.innerHTML="Loading Jailbreak + Restore Host 1.3 Fw 9.0... Please Wait !!!"
 LoadedMSG="Restore Host 1.3 Loaded... Press OK Now !!!";
+setTimeout(poc,1500);
+}
+
+function load_dbrestore4(){
+var script = document.createElement('script');script.src = "restore5/the-payload.js";document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Loading Jailbreak + Restore Host 1.4 Fw 9.0... Please Wait !!!"
+LoadedMSG="Restore Host 1.4 Loaded... Press OK Now !!!";
 setTimeout(poc,1500);
 }
 </script>
